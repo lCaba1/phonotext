@@ -1,3 +1,7 @@
+/cxx/res/data/out.txt
+/cxx/res/data/outJson.json
+__pycache__/
+
 # C++ objects and libs
 *.slo
 *.lo
