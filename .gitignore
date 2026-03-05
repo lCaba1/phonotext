@@ -1,5 +1,5 @@
-/cxx/res/data/out.txt
-/cxx/res/data/outJson.json
+/cxx/res/data/*
+/cxx/build/*
 __pycache__/
 
 # C++ objects and libs
@@ -32,7 +32,6 @@ ui_*.h
 *.qmlc
 *.jsc
 Makefile*
-*build-*
 *.qm
 *.prl
 
@@ -58,7 +57,6 @@ compile_commands.json
 *_qmlcache.qrc
 
 # Original .gitignore
-build/
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles

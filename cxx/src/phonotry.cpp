@@ -13,7 +13,7 @@ int main()
 #endif
 
     std::ifstream fin;
-    fin.open("res/data/in1.txt", std::ios_base::in);
+    fin.open("res/data/in.txt", std::ios_base::in);
     if (!fin.is_open()){
         std::cout << "File cannot be opened" << std::endl;
         return 0;
