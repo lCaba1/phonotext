@@ -7,10 +7,16 @@ def run_cxx_app():
 
 
 import json
+import os
 
 def read_out_json():
 
-    with open("./cxx/res/data/outJson.json", "r", encoding="utf-8") as f:
+    path = "./cxx/res/data/outJson.json"
+
+    if not os.path.exists(path):
+        return ""
+
+    with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     return data

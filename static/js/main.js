@@ -12,12 +12,12 @@ function renderData(data) { // вывод текста и таблицы
             const span = document.createElement('span');
             span.className = 'letter';
             span.textContent = char.origin;
-            span.setAttribute('data-id', char["positions:"].text);
+            span.setAttribute('data-id', char["positions"].text);
             textContainer.appendChild(span);
         }
     });
 
-    data["repeats:"].forEach(rep => {
+    data["repeats"].forEach(rep => {
         const tr = document.createElement('tr');
         tr.innerHTML = `<td><b>${rep.key}</b></td><td>${rep.count}</td><td>${parseFloat(rep.power).toFixed(2)}</td>`;
         
@@ -52,4 +52,10 @@ function handleRowClick(tr, indCombs) { // подсветка по нажати�
         });
     });
 }
+
+
+
+console.log(JSON.parse(document.getElementById('initial-data').textContent));
+renderData(JSON.parse(document.getElementById('initial-data').textContent));
+
 

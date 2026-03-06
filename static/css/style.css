@@ -10,15 +10,7 @@ body {
     color: #333;
 }
 
-.top-bar {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    display: flex;
-    gap: 15px;
-    align-items: flex-start;
-}
+
 
 #user-text {
     flex: 1;
@@ -105,3 +97,28 @@ th {
 td { padding: 12px 15px; border-bottom: 1px solid #eee; cursor: pointer; font-size: 15px; }
 tr:hover { background-color: #f1f8fe; }
 .active-row { background-color: #e3f2fd !important; font-weight: bold; border-left: 4px solid #2196f3; }
+
+
+
+
+
+
+.top-bar {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+
+
+.analyze-btn {
+    padding: 0 20px;
+    height: auto;
+    align-self: stretch;
+    font-size: 16px;
+}

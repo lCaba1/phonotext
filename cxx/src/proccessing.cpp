@@ -807,7 +807,7 @@ void Proccessing::createJson(std::string filename)
                 {"is_accent", j.accent},
                 {"is_volve", j.isVolve},
                 {"word", j.word},
-                {"positions:", {
+                {"positions", {
                     {"text", j.number},
                     {"syllab", j.syll},
                     {"word_start", j.fw_pos},
@@ -859,7 +859,7 @@ void Proccessing::createJson(std::string filename)
                 {"indCombs", indCombs}
         };
 
-        outJson["repeats:"][counter] = tmpOutRepeatJson;
+        outJson["repeats"][counter] = tmpOutRepeatJson;
         ++counter;
     }
 

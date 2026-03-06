@@ -22,6 +22,10 @@
     <footer class="app-footer">
         <p>&copy; 2026 Проект Phonotext.</p>
     </footer>
+
+    <script id="initial-data" type="application/json">
+        {{ data | tojson if data else '{}' }}
+    </script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     
     {% block extra_js %}{% endblock %}
