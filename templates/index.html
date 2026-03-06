@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="top-bar">
-    <textarea id="user-text" placeholder="Введите текст здесь..."></textarea>
+<form class="top-bar" method="POST">
+    <textarea id="user-text" name="user_text" placeholder="Введите текст здесь..."></textarea>
     <button class="analyze-btn">Отправить на анализ</button>
-</div>
+</form>
 
 <div class="main-layout">
     <div id="text-panel">

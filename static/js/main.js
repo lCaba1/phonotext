@@ -20,6 +20,7 @@ function renderData(data) { // вывод текста и таблицы
     data["repeats"].forEach(rep => {
         const tr = document.createElement('tr');
         tr.innerHTML = `<td><b>${rep.key}</b></td><td>${rep.count}</td><td>${parseFloat(rep.power).toFixed(2)}</td>`;
+        tr.setAttribute('data-ids', rep.letters);
         
         tr.onclick = () => {
             document.querySelectorAll('.letter').forEach(l => l.classList.remove('highlight'));

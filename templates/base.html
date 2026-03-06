@@ -27,6 +27,7 @@
         {{ data | tojson if data else '{}' }}
     </script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/parse.js') }}"></script>
     
     {% block extra_js %}{% endblock %}
 </body>
